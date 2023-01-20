@@ -25,7 +25,7 @@ public class ConnectionClass
         Connection connection = null;
         String ConnectionURL = null;
         try {
-            Class.forName(classs).newInstance();
+            Class.forName(clas).newInstance();
             ConnectionURL = "jdbc:jtds:sqlserver://" + ip + ";databaseName=" + db + ";user=" + un + ";password=" + pass + ";";
             connection = DriverManager.getConnection(ConnectionURL);
         } catch (SQLException se) {
